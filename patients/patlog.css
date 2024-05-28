@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+.head{
+    color: #444;
+    display: block;
+    position: relative;
+    margin: 0px;
+    padding: 10px 0px 10px 6px;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #f4f4f4;
+}
+.body{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    display: block;
+    margin-top: 0em;
+}

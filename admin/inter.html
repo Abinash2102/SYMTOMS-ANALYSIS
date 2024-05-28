@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title></title>
+	<link rel = "stylesheet" type = "text/css" href = "inter.css"> 
+	<script>
+		function validation()
+		{
+			var id=document.f1.user.value;
+			var ps=document.f1.pass.value;
+			if(id.length=="" && ps.length=="") {
+				alert("User Name and Password fields are empty");
+				return false;
+			}
+			else
+			{
+				if(id.length=="") {
+					alert("User Name is empty");
+					return false;
+				} 
+				if (ps.length=="") {
+				alert("Password field is empty");
+				return false;
+				}
+			}							
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="form">
+			<div class="head">
+				<h1>Admin Login</h1>
+			</div>
+			<form class="body" name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">
+				<label>
+					<input style="width:100%; height:30px;" type="text" name="user" id="user" placeholder="userid" required>
+				</label><br><br>
+				<label>
+					<input style="width:100%; height:30px;" type="password" name="pass" id="pass" placeholder="password">
+				</label><br><br>
+				<button style="border:1px solid #337ab7; background-color: #337ab7; border-radius:8px; width:80px; height:30px;margin-left:500px;" value="login" type="submit" style="margin-left:127px;padding: 5px 25px; border-radius: 4px;">Login</button> <br>
+
+			</form>
+		</div>
+	</div>
+</body>	
+</html>
